@@ -44,7 +44,7 @@ function App() {
       <header>
         <section class="navbar">
           <div className="container flex">
-            <h1>Todo List</h1>
+            <h1>Manons Todo List</h1>
           </div>
         </section>
       </header>
@@ -54,7 +54,7 @@ function App() {
           <input ref={todoNameRef} type="text" placeholder="Enter new todo here" />
           <button onClick={handleAddTodo} class="btn">Add Todo</button>
           <button onClick={handleClearTodos} class="btn">Clear Completed Todos</button>
-          <div>Still {todos.filter(todo => !todo.complete).length} items left to do</div>
+          <div class="leftTodo">Still {todos.filter(todo => !todo.complete).length} items left to do</div>
         </section>
       </main>
     </>
