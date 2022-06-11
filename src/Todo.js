@@ -7,9 +7,9 @@ function Todo({ todo, toggleTodo }) {
 
     return (
         <div>
-            <label>
+            <label class="checkbox-container">{todo.name}
                 <input type="checkbox" checked={todo.complete} onChange={handleTodoClick} />
-                {todo.name}
+                <span class="checkmark"></span>
             </label>
         </div>
     )
